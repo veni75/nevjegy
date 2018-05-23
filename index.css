@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('http://kaktusz-orchidea.hu/images/vl%20027k.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+#profile-card {
+  width: 30rem;
+  max-width: calc(100vw - 30px);
+  text-align: center;
+  background-color: hsla(0, 0%, 100%, .7);
+  border-radius: 15px;
+  box-shadow: hsla(0, 10%, 10%, .8) 10px 10px 80px;
+  border: 3px solid white;
+  }
+
+#head, #content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+#profile-image {
+  margin-top: -3rem;
+}
+
+#head, #about {
+  margin-bottom: 10%;
+}
+
+#content {
+  padding: 5% 10%;
+  border-top: 2px solid hsla(240, 100%, 60%, .5);
+  text-align: justify;
+}
+
+#links {
+  border-top: 2px solid hsla(240, 100%, 60%, .5);
+}
+
+img {
+  border: 3px solid white;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+   filter: grayscale(20%);
+}
+
+img:hover {
+  transform: scale(1.1);
+   filter: grayscale(0%);
+  }
+
+h1 {font-size: 2rem;}
+
+h2 {font-size: 1.4rem;}
+
+h1, h2, p {
+  margin: .5rem;
+}
+
+p {font-size: 1.2rem;}
+#links{text-align: center;
+}
+a{opacity:.5;}
+a:hover {opacity:1;}
+
+@media (min-width: 600px)
+  #profile-card {
+    width: 40vw;}
